@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- Style.css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+
+    <title>Netflix</title>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar sticky-top navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" id="logo"><img src="images/netflix_logo.png" alt=""></a>
+            <div class="navs">
+                <h6 style="font-size:13px;margin-top: 15px;margin-right: 10px;">UNLIMITED TV SHOWS & MOVIES</h6>
+                <a class="nav-link" href="signup.html"><button id="btn-1">JOIN NOW</button></a>
+                <a class="nav-link" href="signin.html"><button id="btn-2">SIGN IN</button></a>
+            </div>
+        </div>
+      </nav>
+      
+      <!-- HEADER -->
+       <div class="container-fluid header">
+          <div class="row ">
+              <div class="col-lg-5 col-md-8 description">
+                  <h1>Netflix Originals</h1>
+                    <h6>Netflix is the home of amazing original programming that you can’t find anywhere else. Movies, TV shows, specials and more, it’s all tailored specifically to you.</h6>
+              </div>
+          </div>
+        </div>
+
+     <!-- POPULAR ON NETFLIX -->
+     <div class="container-fluid main">
+         <div id="b1">
+            <h5>Popular on Netflix</h5>
+            <div class="landscape_posters" id="popular_box">
+               <div class="landscape_poster">
+                   <a href="#b1"><img src="images/moneyheist.jpg" alt="" onclick='handlePopular("htqXL94Rza4" )'></a>
+                   <h6>Money Heist</h6>
+               </div>
+               <div class="landscape_poster">
+                   <a href="#b1"><img src="images/peakyblinders.jpg" alt="" onclick='handlePopular("Ruyl8_PT_y8")'></a>
+                   <h6>Peaky Blinders</h6>
+               </div>
+               <div class="landscape_poster">     
+                   <a href="#b1"><img src="images/stranger things.jpg" alt="" onclick='handlePopular("b9EkMc79ZSU")'></a>
+                   <h6>Stranger Things</h6>
+               </div>
+               <div class="landscape_poster">
+                   <a href="#b1"><img src="images/jt.jpg" alt="" onclick='handlePopular("2OtgYcd83Qg")'></a>
+                   <h6>Jagame Thandhiram</h6>
+               </div>
+               <div class="landscape_poster">
+                   <a href="#b1"><img src="images/narcos.jpg" alt="" onclick='handlePopular("xl8zdCY-abw")'></a>
+                   <h6>Narcos</h6>
+               </div>
+               <div class="landscape_poster">
+                   <a href="#b1"><img src="images/sacredgames.jpg" alt="" onclick='handlePopular("AkUgf2jIPyI")'></a>
+                   <h6>Sacred Games</h6>
+               </div>
+               <div class="landscape_poster">
+                   <a href="#b1"><img src="images/witcher.jpg" alt="" onclick='handlePopular("ndl1W4ltcmg")'></a>
+                   <h6>The Witcher</h6>
+               </div>
+               <div class="landscape_poster">
+                   <a href="#b1"><img src="images/lostinspace.jpg" alt="" onclick='handlePopular("fzmM0AB60QQ")'></a>
+                   <h6>Lost in Space</h6>
+               </div>
+               <div class="landscape_poster">
+                   <a href="#b1"><img src="images/Navarasa.jpg" alt="" onclick='handlePopular("Go6O1wX8H-c")'></a>
+                   <h6>Navarasa</h6>
+               </div>
+           </div>
+       
+           <div class="scroll">
+               <div onclick="scrollMeLeft('one')" id="scrollArrow-left-1"><i class="fa fa-angle-left" style="color: red;font-size: 30px;"></i></div>
+               <div onclick="scrollMeRight('one')"  id="scrollArrow-right-1"><i class="fa fa-angle-right" style="color: red;font-size: 30px;"></i></div>
+           </div> 
+         </div>
+    
+
+    <!-- trailer  box 1-->
+    <div class="row trailer_box" id="popularTrailer">
+        <iframe id="popularFrame" src="" title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+    </div>
+
+    <!-- DRAMAS -->
+    <div id="b2">
+        <h5>Drama</h5>
+        <div class="landscape_posters" id="drama_box">
+           <div class="landscape_poster" id="shaw"> 
+               <a href="#b2"><img src="images/shawshank redemption.jpg" alt="" onclick='handleDrama("PLl99DlL6b4" )'></a>
+               <h6>Shawshank Redemption</h6>
+           </div>
+           <div class="landscape_poster">
+               <a href="#b2"><img src="images/irishman.jpg" alt="" onclick='handleDrama("WHXxVmeGQUc")'></a>
+               <h6>The Irishman</h6>
+           </div>
+           <div class="landscape_poster">     
+               <a href="#b2"><img src="images/pursuit.jpg" alt="" onclick='handleDrama("DMOBlEcRuw8")'></a>
+               <h6>The Pursuit of Happyness</h6>
+           </div>
+           <div class="landscape_poster">
+               <a href="#b2"><img src="images/theboy.jpg" alt="" onclick='handleDrama("nPkr9HmglG0")'></a>
+               <h6>The Boy Who Harnessed the Wind</h6>
+           </div>
+           <div class="landscape_poster">
+               <a href="#b2"><img src="images/goodfellas.jpg" alt="" onclick='handleDrama("xWMxvFvhAB8")'></a>
+               <h6>GoodFellas</h6>
+           </div>
+           <div class="landscape_poster">
+               <a href="#b2"><img src="images/midnight.jpg" alt="" onclick='handleDrama("DXUUqr3AFKs")'></a>
+               <h6>The Midnight Sky</h6>
+           </div>
+           <div class="landscape_poster">
+               <a href="#b2"><img src="images/mirage.jpg" alt="" onclick='handleDrama("3NCOwTBWYdE")'></a>
+               <h6>Mirage</h6>
+           </div>
+           <div class="landscape_poster">
+               <a href="#b2"><img src="images/birdbox.jpg" alt="" onclick='handleDrama("o2AsIXSh2xo")'></a>
+               <h6>Bird Box</h6>
+           </div>
+           <div class="landscape_poster">
+               <a href="#b2"><img src="images/junekopi.jpg" alt="" onclick='handleDrama("li8l80bY39w")'></a>
+               <h6>June & Kopi</h6>
+           </div>
+       </div>
+   
+       <div class="scroll">
+           <div onclick="scrollMeLeft('two')" id="scrollArrow-left-2"><i class="fa fa-angle-left" style="color: red;font-size: 30px;"></i></div>
+           <div onclick="scrollMeRight('two')"  id="scrollArrow-right-2"><i class="fa fa-angle-right" style="color: red;font-size: 30px;"></i></div>
+       </div>
+    </div>
+   
+
+     <!-- trailer  box 2-->
+     <div class="row trailer_box" id="dramaTrailer">
+        <iframe class="col-sm-12" id="dramaFrame" src="" title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+    </div>
+
+     <!-- ACTION-->
+     <div id="b3">
+        <h5>Action & Adventure</h5>
+        <div class="landscape_posters" id="action_box">
+           <div class="landscape_poster">
+               <a href="#b3"><img src="images/bb.png" alt="" onclick='handleAction("2gTC4uWP3_Y" )'></a>
+               <h6>Breaking Bad</h6>
+           </div>
+           <div class="landscape_poster">
+               <a href="#b3"><img src="images/got.jpg" alt="" onclick='handleAction("KPLWWIOCOOQ")'></a>
+               <h6>Game of Thrones</h6>
+           </div>
+           <div class="landscape_poster">     
+               <a href="#b3"><img src="images/bodyguard.jpg" alt="" onclick='handleAction("tLfLU6-9lxY")'></a>
+               <h6>Bodyguard</h6>
+           </div>
+           <div class="landscape_poster">
+               <a href="#b3"><img src="images/projectpower.jpg" alt="" onclick='handleAction("xw1vQgVaYNQ")'></a>
+               <h6>Project Power</h6>
+           </div>
+           <div class="landscape_poster">
+               <a href="#b3"><img src="images/rimofworld.jpg" alt="" onclick='handleAction("xkvBpKHL99k")'></a>
+               <h6>Rim of the World</h6>
+           </div>
+           <div class="landscape_poster">
+               <a href="#b3"><img src="images/king.jpg" alt="" onclick='handleAction("svVykTznk9Q")'></a>
+               <h6>The King</h6>
+           </div>
+           <div class="landscape_poster">
+               <a href="#b3"><img src="images/belowzero.jpg" alt="" onclick='handleAction("UCLz92vUYJY")'></a>
+               <h6>Below Zero</h6>
+           </div>
+           <div class="landscape_poster">
+               <a href="#b3"><img src="images/extraction.jpg" alt="" onclick='handleAction("L6P3nI6VnlY")'></a>
+               <h6>Extraction</h6>
+           </div>
+           <div class="landscape_poster">
+               <a href="#b3"><img src="images/skyhigh.jpg" alt="" onclick='handleAction("G7aMWVN1ThM")'></a>
+               <h6>Sky High</h6>
+           </div>
+       </div>
+   
+       <div class="scroll">
+           <div onclick="scrollMeLeft('three')" id="scrollArrow-left-3"><i class="fa fa-angle-left" style="color: red;font-size: 30px;"></i></div>
+           <div onclick="scrollMeRight('three')"  id="scrollArrow-right-3"><i class="fa fa-angle-right" style="color: red;font-size: 30px;"></i></div>
+       </div>
+     </div>
+     
+
+     <!-- trailer  box 3-->
+     <div class="row trailer_box" id="actionTrailer">
+        <iframe id="actionFrame" src="" title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+    </div>
+
+    <!-- USELESS-->
+    <h5 style="margin-top: 30px;filter: blur(5px);">Popular on Netflix</h5>
+    <div class="landscape_posters" id="useless1">
+       <div class="landscape_poster">
+           <a><img src="images/lucifer.jpg" alt="" onclick='handleAction("Go6O1wX8H-c" )'></a>
+           <h6>Shawshank Redemption</h6>
+       </div>
+       <div class="landscape_poster">
+           <a><img src="images/operationfinale.jpg" alt="" onclick='handleAction("ndl1W4ltcmg")'></a>
+           <h6>Peaky Blinders</h6>
+       </div>
+       <div class="landscape_poster">     
+           <a><img src="images/godzilla.jpg" alt="" onclick='handleAction("AkUgf2jIPyI")'></a>
+           <h6>Stranger Things</h6>
+       </div>
+       <div class="landscape_poster">
+           <a><img src="images/jt.jpg" alt="" onclick='handleAction("WHXxVmeGQUc")'></a>
+           <h6>Jagame Thandhiram</h6>
+       </div>
+       <div class="landscape_poster">
+           <a><img src="images/narcos.jpg" alt="" onclick='handleAction("L6P3nI6VnlY")'></a>
+           <h6>Narcos</h6>
+       </div>
+       <div class="landscape_poster">
+           <a><img src="images/sacredgames.jpg" alt="" onclick='handleAction("3mTh2joPPj8")'></a>
+           <h6>Sacred Games</h6>
+       </div>
+       <div class="landscape_poster">
+           <a><img src="images/witcher.jpg" alt="" onclick='handleAction("5UijUOy0MmE")'></a>
+           <h6>Witcher</h6>
+       </div>
+       <div class="landscape_poster">
+           <a><img src="images/lostinspace.jpg" alt="" onclick='handleAction("tLfLU6-9lxY")'></a>
+           <h6>Lost in Space</h6>
+       </div>
+       <div class="landscape_poster">
+           <a><img src="images/Navarasa.jpg" alt="" onclick='handleAction("fwUWlxAQj-o")'></a>
+           <h6>Navarasa</h6>
+       </div>
+   </div>
+
+
+   <!-- JOIN NOW -->
+   <div class="row joinnow">
+       <div class="col-lg-8 mx-auto">
+        <h3>There’s even more to watch.</h3>
+        <p>Netflix has an extensive library of feature films, documentaries, TV shows,
+            anime, award-winning Netflix originals and more. Watch as much as you want, anytime you want.</p>
+        <a href="signup.html"><button>JOIN NOW</button></a>
+    </div>
+    </div>
+
+    <hr>
+    <!-- FOOTER -->
+    <div class="row footer mx-auto">
+        <div class="col-lg-5 col-md-4">
+            <h6>Company</h6>
+            <a href="https://about.netflix.com/en" target="_blank">About Netflix</a><br>
+            <a href="https://help.netflix.com/en/node/412" target="_blank">FAQ</a><br>
+            <a href="signup.html">Start Watching</a>
+            
+        </div>
+        <div class="col-lg-4 col-md-4">
+            <h6>Contact Us</h6>
+            <a href="https://twitter.com/netflix" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/netflix/" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/netflix" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+        </div>
+        <div class="col-lg-3 col-md-4">
+            <h6>Legal</h6>
+            <a href="https://help.netflix.com/en/legal/media-terms-and-conditions" target="_blank">Terms and Conditions</a><br>
+            <a href="https://help.netflix.com/en/legal/corporateprivacy" target="_blank">Privacy</a><br>
+            <a href="https://help.netflix.com/en/" target="_blank">Help Center</a><br>
+        </div>
+        
+    </div>
+
+
+</div>
+    <script src="home.js"></script>
+    <script src="event.js"></script>
+</body>
+</html>

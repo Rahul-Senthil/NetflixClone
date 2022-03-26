@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- Style.css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+    <title>Netflix | Series</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+      <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/netflix_logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item" style="margin-right:20px ;">
+                <a class="nav-link" href="home.html">Home</a>
+              </li>
+              <li class="nav-item" style="margin-right:20px ;">
+                <a class="nav-link" href="movies.html">Movies</a>
+              </li>
+              <li class="nav-item" style="margin-right:20px ;">
+                <a class="nav-link" href="series.html">Series</a>
+              </li>
+              <li class="nav-item" style="margin-right:20px ;">
+                <a class="nav-link" href="#contact_us">More</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="signin.html"> Sign Out</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- SERIES -->
+    <div class="container-fluid main series">
+           <h5>Netflix Series</h5>
+           <div class="portrait_posters mx-auto" id="popular_box">
+              <div class="portrait_poster">
+                  <a href="review.html">
+                      <img src="/poster/brba.jpg"  alt="" 
+                      onclick='handleSeries(
+                        {banner: "brba.jpg",
+                        title_img:"brba_title.png",
+                        title:"Breaking Bad",
+                        details:"2008 | 18+ | 5 Seasons | TV Thrillers",
+                        plot:"A terminally ill chemistry teacher teams with a former student to manufacture crystal meth to secure his familys future.",
+                        starring:"Bryan Cranston,Aaron Paul,Anna Gunn",
+                        creators:"Vince Gilligan",
+                        trailer:"HhesaQXLuRY"})'>
+                  </a>
+                  <h6>Breaking Bad</h6>
+              </div>
+              <div class="portrait_poster">
+                  <a href="review.html">
+                      <img src="/poster/monesyheist.jpg" alt="" 
+                      onclick='handleSeries(
+                        {banner: "moneyheist.jpg",
+                        title_img:"moneyheist_title.png",
+                        title:"Money Heist",
+                        details:"2017 | 18+ | 5 Seasons | TV Thrillers",
+                        plot:"Eight thieves take hostages and lock themselves in the Royal Mint of Spain as a criminal mastermind manipulates the police to carry out his plan.",
+                        starring:"Úrsula Corberó,Álvaro Morte,Itziar Ituño",
+                        creators:"Álex Pina",
+                        trailer:"htqXL94Rza4"})'>
+                  </a>
+                  <h6>Money Heist</h6>
+              </div>
+              <div class="portrait_poster">
+                <a href="review.html">
+                    <img src="/poster/witcher.jpg" alt="" 
+                    onclick='handleSeries(
+                      {banner: "witcher.jpg",
+                      title_img:"witcher_title.png",
+                      title:"The Witcher",
+                      details:"2019 | 18+ | 1 Season | TV Dramas",
+                      plot:"Geralt of Rivia, a mutated monster-hunter for hire, journeys toward his destiny in a turbulent world where people often prove more wicked than beasts.",
+                      starring:"Henry Cavill,Anya Chalotra,Freya Allan",
+                      creators:"Lauren Schmidt Hissrich",
+                      trailer:"ndl1W4ltcmg"})'>
+                </a>
+                <h6>The Witcher</h6>
+            </div>
+              <div class="portrait_poster">
+                <a href="review.html">
+                    <img src="/poster/13reason.jpg" alt="" 
+                    onclick='handleSeries(
+                      {banner: "13reasons.jpg",
+                      title_img:"13reasons_title.png",
+                      title:"13 Reasons Why",
+                      details:"2017 | 18+ | 4 Seasons | TV Dramas",
+                      plot:"High school student Clay Jensen lands in the center of a series of heartbreaking mysteries set in motion by a friends tragic suicide.",
+                      starring:"Dylan Minnette,Katherine Langford,Alisha Boe",
+                      creators:"Brian Yorkey",
+                      trailer:"poUq9ypynKs"})'>
+                </a>
+                <h6>13 Reasons Why</h6>
+            </div>
+            <div class="portrait_poster">
+              <a href="review.html">
+                  <img src="/poster/dark.png" alt="" 
+                  onclick='handleSeries(
+                    {banner: "dark.jpg",
+                    title_img:"dark_title.png",
+                    title:"Dark",
+                    details:"2017 | 18+ | 3 Seasons | TV Thrillers",
+                    plot:"A missing child sets four families on a frantic hunt for answers as they unearth a mind-bending mystery that spans three generations.",
+                    starring:"Louis Hofmann,Oliver Masucci,Jördis Triebel",
+                    creators:"Baran bo Odar,Jantje Friese",
+                    trailer:"cq2iTHoLrt0"})'>
+              </a>
+              <h6>Dark</h6>
+          </div>
+              <div class="portrait_poster">
+                  <a href="review.html">
+                      <img src="/poster/peakyblinders.jpg" alt=""
+                       onclick='handleSeries(
+                         {banner: "peakyblinders.jpg",
+                         title_img:"peakyblinders_title.png",
+                         title:"Peaky Blinders",
+                         details:"2013 | 18+ | 5 Seasons | Period Pieces",
+                         plot:"A notorious gang in 1919 Birmingham, England, is led by the fierce Tommy Shelby, a crime boss set on moving up in the world no matter the cost.",
+                         starring:"Cillian Murphy,Sam Neill,Helen McCrory",
+                         creators:"Steven Knight",
+                         trailer:"Ruyl8_PT_y8"})'>
+                  </a>
+                  <h6>Peaky Blinders</h6>
+              </div>
+              <div class="portrait_poster">
+                <a href="review.html">
+                    <img src="/poster/strangerthings.png" alt="" 
+                    onclick='handleSeries(
+                      {banner: "strangerthings.jpg",
+                      title_img:"strangerthings_title.png",
+                      title:"Stranger Things",
+                      details:"2016 | 16+ | 3 Seasons | Teen TV Shows",
+                      plot:"When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.",
+                      starring:"Winona Ryder,David Harbour,Finn Wolfhard",
+                      creators:"The Duffer Brothers",
+                      trailer:"b9EkMc79ZSU"})'>
+                  </a>
+                <h6>Stranger Things</h6>
+            </div>
+              <div class="portrait_poster">
+                  <a href="review.html">
+                      <img src="/poster/vikings.jpg" alt="" 
+                      onclick='handleSeries(
+                        {banner: "vikings.jpg",
+                        title_img:"vikings_title.png",
+                        title:"Vikings",
+                        details:"2013 | 18+ | 6 Seasons | Period Pieces",
+                        plot:"This gritty drama charts the exploits of Viking hero Ragnar Lothbrok as he extends the Norse reach by challenging an unfit leader who lacks vision.",
+                        starring:"Travis Fimmel,Katheryn Winnick,Clive Standen",
+                        creators:"Michael Hirst",
+                        trailer:"9GgxinPwAGc"})'>
+                  </a>
+                  <h6>Vikings</h6>
+              </div>
+          </div>
+        </div>
+
+         <!-- FOOTER -->
+      <hr class="mx-auto" style="width: 95%;margin-top:100px;">
+      <div class="row footer mx-auto">
+          <div class="col-lg-5 col-md-4">
+              <h6>Company</h6>
+              <a href="https://about.netflix.com/en" target="_blank">About Netflix</a><br>
+              <a href="https://help.netflix.com/en/node/412" target="_blank">FAQ</a><br>
+              <a href="signup.html">Start Watching</a>
+          </div>
+          <div class="col-lg-4 col-md-4" id="contact_us">
+              <h6>Contact Us</h6>
+              <a href="https://twitter.com/netflix" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+              <a href="https://www.instagram.com/netflix/" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+              <a href="https://www.facebook.com/netflix" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+          </div>
+          <div class="col-lg-3 col-md-4">
+              <h6>Legal</h6>
+              <a href="https://help.netflix.com/en/legal/media-terms-and-conditions" target="_blank">Terms and Conditions</a><br>
+              <a href="https://help.netflix.com/en/legal/corporateprivacy" target="_blank">Privacy</a><br>
+              <a href="https://help.netflix.com/en/" target="_blank">Help Center</a><br>
+          </div>
+      </div>
+      </div>
+
+          
+
+          <script src="review.js"></script>
+
+</body>
+</html>

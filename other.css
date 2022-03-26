@@ -1,0 +1,408 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.navbar {
+  height: 80px;
+}
+
+.navbar-brand img {
+  width: 200px;
+  height: 80px;
+  object-fit: contain;
+  margin-left: 20px;
+}
+
+.navs a {
+  color: black;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.signup h6 {
+  font-size: 13px;
+  margin-top: 30px;
+}
+
+.signup p {
+  font-size: 16px;
+}
+
+.signup input {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 10px;
+  padding: 15px;
+  font-size: 17px;
+}
+
+#pass-constrain {
+  display: none;
+}
+
+button {
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  background-color: #e50914;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: red;
+}
+
+.footer {
+  line-height: 40px;
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.footer a {
+  color: grey;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer h6 {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.footer i {
+  margin-right: 10px;
+}
+
+.footer i:hover {
+  color: red;
+}
+
+/* PLAN CSS */
+
+.plan {
+  width: 60%;
+  margin-top: 30px;
+}
+
+.plan h6 {
+  font-size: 13px;
+}
+
+.plan ul li {
+  list-style: none;
+  margin-left: -30px;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.fa-check {
+  color: #e50914;
+  margin-right: 10px;
+}
+
+.details {
+  width: 60%;
+  margin-top: 50px;
+  /* overflow: hidden; */
+}
+
+.box {
+  background-color: #e50914;
+  width: 120px;
+  height: 120px;
+  margin-right: 20px;
+  text-align: center;
+  padding-top: 50px;
+  color: white;
+  opacity: 0.6;
+  border-radius: 3px;
+  transform: translateX(-40px);
+  cursor: pointer;
+}
+.box input {
+  appearance: none;
+}
+
+.box h6 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+tr {
+  height: 60px;
+}
+
+td {
+  color: grey;
+  vertical-align: middle;
+  width: 150px;
+}
+
+td:nth-child(1) {
+  width: 350px;
+}
+
+.last-row td {
+  vertical-align: top;
+}
+
+.last-row td p {
+  font-size: 12px;
+}
+
+.last-row i {
+  margin-left: 15px;
+}
+
+.last-row p {
+  margin-left: 5px;
+}
+
+.fa-mobile,
+.fa-tablet,
+.fa-laptop,
+.fa-television {
+  color: grey;
+}
+
+/* PAYMENT CSS */
+
+.payment h6 {
+  font-size: 13px;
+  margin-top: 30px;
+}
+
+.payment p {
+  font-size: 16px;
+}
+
+.payment img {
+  width: 50px;
+}
+
+.payment input {
+  width: 100%;
+  height: 60px;
+  margin-top: 10px;
+  padding: 15px;
+  font-size: 17px;
+  border: 1px solid grey;
+}
+
+.plan-box {
+  margin-top: 10px;
+  height: 60px;
+  background-color: #ede7e6;
+}
+
+.plan-display {
+  padding: 10px;
+  height: 60px;
+}
+
+.plan-display h6 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.plan-display p {
+  font-size: 14px;
+  color: grey;
+}
+
+.change a {
+  float: right;
+  margin-top: 17px;
+  text-decoration: none;
+}
+
+/* OTHER SCREENS */
+@media only screen and (max-width: 870px) {
+  .navbar {
+    height: 60px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar-brand img {
+    width: 150px;
+    height: 60px;
+    object-fit: contain;
+    margin-left: -10px;
+  }
+
+  .navs a {
+    color: black;
+    text-decoration: none;
+    margin-right: 0px;
+    font-size: 18px;
+  }
+
+  .plan {
+    width: 100%;
+  }
+
+  .details {
+    width: 100%;
+    padding: 0;
+  }
+
+  .details h6 {
+    text-align: center;
+  }
+
+  .table {
+    width: 95%;
+    padding-left: 0;
+    margin-left: 5%;
+  }
+
+  .notes {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .plan {
+    width: 100%;
+  }
+
+  .details {
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .details h6 {
+    text-align: center;
+  }
+
+  .table {
+    width: 100%;
+    padding-left: 0;
+    margin-left: 10%;
+  }
+
+  .table-box {
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  td {
+    width: 50px;
+    font-size: 12px;
+  }
+
+  td:nth-child(1) {
+    display: none;
+  }
+
+  .last-row td p {
+    font-size: 10px;
+  }
+
+  .box {
+    background-color: #e50914;
+    width: 80px;
+    height: 80px;
+    margin-right: 5px;
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    transform: translateX(-10px);
+  }
+
+  .box span {
+    font-size: 10px;
+  }
+
+  .notes {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .navbar {
+    height: 50px;
+  }
+
+  .navbar-brand img {
+    width: 100px;
+    height: 40px;
+    margin-left: -20px;
+  }
+
+  .navs a {
+    font-size: 16px;
+  }
+
+  .plan {
+    width: 100%;
+  }
+
+  .details {
+    width: 100%;
+    padding: 0;
+  }
+
+  .table {
+    width: 100%;
+    padding-left: 0;
+    margin-left: 6%;
+  }
+
+  .table-box {
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  td {
+    width: 50px;
+    font-size: 13px;
+    margin-left: 10px;
+  }
+
+  td:nth-child(1) {
+    display: none;
+  }
+
+  .last-row td p {
+    font-size: 11px;
+  }
+
+  .box {
+    background-color: #e50914;
+    width: 65px;
+    height: 65px;
+    margin-right: 5px;
+    text-align: center;
+    padding-top: 23px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+  }
+
+  .box span {
+    font-size: 10px;
+  }
+}

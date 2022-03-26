@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- Style.css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+    <title>Netflix</title>
+</head>
+
+    <!-- NAVBAR -->
+      <nav class="navbar sticky-top navbar-expand-lg navbar-dark ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/netflix_logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item dropdown" style="margin-right:20px ;">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Watch
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#b1">Popular</a></li>
+                  <li><a class="dropdown-item" href="#b2">Drama</a></li>
+                  <li><a class="dropdown-item" href="#b3">Action</a></li>
+                </ul>
+              </li>
+              <li class="nav-item" style="margin-right:20px ;">
+                <a class="nav-link" href="movies.html">Movies</a>
+              </li>
+              <li class="nav-item" style="margin-right:20px ;">
+                <a class="nav-link" href="series.html">Series</a>
+              </li>
+              <li class="nav-item" style="margin-right:20px ;">
+                <a class="nav-link" href="#contact_us">More</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="signin.html"> Sign Out</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- BANNER -->  
+      <div class="banner home-banner">
+        <div class="banner-box">
+                <div class="banner-img">
+                    <img class="img-fluid main-img" src="banner_images/jt.jpg" alt="">
+                    <div class="info-container">
+                        <div class="col-lg-8 col-md-6 col-sm-6 details">
+                                  <img class="img-fluid title-img" src="banner_images/jt_title.png" alt="">
+                                  <br>
+                                  <h3>Jagame Thandhiram</h3>
+                                  <p style="color: grey;font-size: 14px;">2021 | 18+ | 2h 38m | Tamil-Language Movies</p>
+                                  <p>
+                                    When a clever, carefree gangster is recruited to help an overseas crime lord take down a rival, he is caught off guard by the moral dilemmas that follow.</p>
+                                  <br>
+                                  <p><span style="color: grey;">Starring:</span> Dhanush,Aishwarya Lekshmi,James Cosmo</p> 
+                                  <p><span style="color: grey;">Creator:</span> Karthik Subbaraj</p>
+                        </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- POPULAR ON NETFLIX -->
+    <div class="container-fluid main">
+        <div id="b1">
+           <h5>Popular on Netflix</h5>
+           <div class="landscape_posters" id="popular_box">
+              <div class="landscape_poster">
+                  <a href="review.html">
+                    <img src="/images/moneyheist.jpg" alt="" 
+                    onclick='handleSeries(
+                        {banner: "moneyheist.jpg",
+                        title_img:"moneyheist_title.png",
+                        title:"Money Heist",
+                        details:"2017 | 18+ | 5 Seasons | TV Thrillers",
+                        plot:"Eight thieves take hostages and lock themselves in the Royal Mint of Spain as a criminal mastermind manipulates the police to carry out his plan.",
+                        starring:"Úrsula Corberó,Álvaro Morte,Itziar Ituño",
+                        creators:"Álex Pina",
+                        trailer:"htqXL94Rza4"})'></a>
+                  <h6>Money Heist</h6>
+              </div>
+              <div class="landscape_poster">
+                  <a href="review.html">
+                    <img src="/images/Navarasa.jpg" alt="" 
+                    onclick='handleSeries(
+                        {banner:"navarasa.jpg",
+                        title_img:"navarasa_title.png",
+                        title:"Navarasa",
+                        details:"2021 | 18+ | 1 Season | Social Issue Dramas",
+                        plot:"From amusement to awe, the nine human emotions of Indian aesthetic theory are explored in this anthology series.",
+                        starring:"Suriya,Vijay Sethupathi,Revathy,etc",
+                        creators:"Karthik Subbaraj,Karthik Naren,Goutham Vasudev Menon,etc",
+                        trailer:"Go6O1wX8H-c"})'></a>
+                  <h6>Navarasa</h6>
+              </div>
+              <div class="landscape_poster">     
+                  <a href="review.html">
+                    <img src="/images/stranger things.jpg" alt="" 
+                    onclick='handleSeries(
+                    {banner: "strangerthings.jpg",
+                      title_img:"strangerthings_title.png",
+                      title:"Stranger Things",
+                      details:"2016 | 16+ | 3 Seasons | Teen TV Shows",
+                      plot:"When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.",
+                      starring:"Winona Ryder,David Harbour,Finn Wolfhard",
+                      creators:"The Duffer Brothers",
+                      trailer:"b9EkMc79ZSU"})'></a>
+                  <h6>Stranger Things</h6>
+              </div>
+              <div class="landscape_poster">
+                  <a href="review.html">
+                    <img src="/images/jt.jpg" alt="" 
+                    onclick='handleSeries(
+                    {banner:"jt.jpg",
+                    title_img:"jt_title.png",
+                    title:"Jagame Thandhiram",
+                    details:"2021 | 18+ | 2h 38m | Tamil-Language Movies",
+                    plot:"When a clever, carefree gangster is recruited to help an overseas crime lord take down a rival, he is caught off guard by the moral dilemmas that follow.",
+                    starring:"Dhanush,Aishwarya Lekshmi,James Cosmo",
+                    creators:"Karthik Subbaraj",
+                    trailer:"2OtgYcd83Qg",
+                    movie:"Jagame_Thandhiram.mkv"})'></a>
+                  <h6>Jagame Thandhiram</h6>
+              </div>
+              <div class="landscape_poster">
+                  <a href="review.html">
+                    <img src="/images/narcos.jpg" alt="" 
+                    onclick='handleSeries(
+                        {banner:"narcos.jpg",
+                        title_img:"narcos_title.png",
+                        title:"Narcos",
+                        details:"2015 | 18+ | 3 Seasons | US TV Shows",
+                        plot:"The true story of Colombia`s infamously violent and powerful drug cartels fuels this gritty gangster drama series.",
+                        starring:"Wagner Moura,Pedro Pascal,Boyd Holbrook",
+                        creators:"Chris Brancato,Carlo Bernard,Doug Miro",
+                        trailer:"xl8zdCY-abw"})'></a>
+                  <h6>Narcos</h6>
+              </div>
+              <div class="landscape_poster">
+                  <a href="review.html">
+                    <img src="/images/sacredgames.jpg" alt="" 
+                    onclick='handleSeries(
+                        {banner:"sacredgames.jpg",
+                        title_img:"sacredgames_title.png",
+                        title:"Sacred Games",
+                        details:"2018 | 18+ | 2 Seasons | TV Shows Based on Books",
+                        plot:"A link in their pasts leads an honest cop to a fugitive gang boss, whose cryptic warning spurs the officer on a quest to save Mumbai from cataclysm.",
+                        starring:"Saif Ali Khan,Nawazuddin Siddiqui,Pankaj Tripathi",
+                        creators:"Vikramaditya Motwane",
+                        trailer:"AkUgf2jIPyI"})'></a>
+                  <h6>Sacred Games</h6>
+              </div>
+              <div class="landscape_poster">
+                  <a href="review.html">
+                    <img src="/images/witcher.jpg" alt="" 
+                    onclick='handleSeries(
+                        {banner: "witcher.jpg",
+                      title_img:"witcher_title.png",
+                      title:"The Witcher",
+                      details:"2019 | 18+ | 1 Season | TV Dramas",
+                      plot:"Geralt of Rivia, a mutated monster-hunter for hire, journeys toward his destiny in a turbulent world where people often prove more wicked than beasts.",
+                      starring:"Henry Cavill,Anya Chalotra,Freya Allan",
+                      creators:"Lauren Schmidt Hissrich",
+                      trailer:"ndl1W4ltcmg"})'></a>
+                  <h6>The Witcher</h6>
+              </div>
+              <div class="landscape_poster">
+                  <a href="review.html">
+                    <img src="/images/lostinspace.jpg" alt="" 
+                    onclick='handleSeries(
+                        {banner:"lostinspace.jpg",
+                        title_img:"lostinspace_title.png",
+                        title:"Lost in Space",
+                        details:"2018 | 7+ | 2 Seasons | US TV Shows",
+                        plot:"After crash-landing on an alien planet, the Robinson family fights against all odds to survive and escape. But they`re surrounded by hidden dangers.",
+                        starring:"Molly Parker,Toby Stephens,Maxwell Jenkins",
+                        creators:"Stephen Hopkins",
+                        trailer:"fzmM0AB60QQ"})'></a>
+                  <h6>Lost in Space</h6>
+              </div>
+              <div class="landscape_poster">
+                  <a href="review.html">
+                    <img src="/images/peakyblinders.jpg" alt="" 
+                    onclick='handleSeries(
+                        {banner: "peakyblinders.jpg",
+                         title_img:"peakyblinders_title.png",
+                         title:"Peaky Blinders",
+                         details:"2013 | 18+ | 5 Seasons | Period Pieces",
+                         plot:"A notorious gang in 1919 Birmingham, England, is led by the fierce Tommy Shelby, a crime boss set on moving up in the world no matter the cost.",
+                         starring:"Cillian Murphy,Sam Neill,Helen McCrory",
+                         creators:"Steven Knight",
+                         trailer:"Ruyl8_PT_y8"})'></a>
+                  <h6>Peaky Blinders</h6>
+              </div>
+          </div>
+      
+          <div class="scroll">
+              <div onclick="scrollMeLeft('one')" id="scrollArrow-left-1"><i class="fa fa-angle-left" style="color: red;font-size: 30px;"></i></div>
+              <div onclick="scrollMeRight('one')"  id="scrollArrow-right-1"><i class="fa fa-angle-right" style="color: red;font-size: 30px;"></i></div>
+          </div> 
+        </div>
+
+   <!-- DRAMAS -->
+   <div id="b2">
+       <h5>Drama</h5>
+       <div class="landscape_posters" id="drama_box">
+          <div class="landscape_poster">
+              <a href="review.html">
+                  <img src="/images/shawshank redemption.jpg" alt="" 
+                    onclick='handleSeries(
+                        {banner: "shaw.jpg",
+                     title_img:"shaw_title.png",
+                     title:"The Shawshank Redemption",
+                     details:"1994 | 18+ | 2h 22m | US Movies",
+                     plot:"Framed for murder, upstanding banker Andy Dufresne begins a new life at the Shawshank prison and gradually forms a close bond with older inmate Red.",
+                     starring:"Tim Robbins,Morgan Freeman,Bob Gunton",
+                     creators: "Frank Darabont",
+                     trailer:"PLl99DlL6b4",
+                     movie:"Shawshank_redemption.mp4"})'></a>
+              <h6>Shawshank Redemption</h6>
+          </div>
+          <div class="landscape_poster">
+              <a href="review.html">
+                  <img src="/images/irishman.jpg" alt="" 
+                    onclick='handleSeries(
+                    {banner: "irishman.jpg",
+                   title_img:"irishman_title.png",
+                   title:"The Irishman",
+                   details:"2019 | 16+ | 3h 29m | US Movies",
+                   plot:"Hit man Frank Sheeran looks back at the secrets he kept as a loyal member of the Bufalino crime family in this acclaimed film from Martin Scorsese.",
+                   starring:"Robert De Niro,Al Pacino,Joe Pesci",
+                   creators:"Martin Scorsese",
+                   trailer:"WHXxVmeGQUc"})'></a>
+              <h6>The Irishman</h6>
+          </div>
+          <div class="landscape_poster">     
+              <a href="review.html">
+                  <img src="/images/pursuit.jpg" alt="" 
+                    onclick='handleSeries(
+                        {banner:"happyness.jpg",
+                        title_img:"happyness_title.png",
+                        title:"The Pursuit of Happyness",
+                        details:"2006 | 13+ | 1h 57m | US Movies",
+                        plot:"When Chris and his son are evicted, they face trying times as a desperate Chris accepts an unpaid internship at a stock brokerage firm.",
+                        starring:"Will Smith,Jaden Smith,Thandiwe Newton",
+                        creators:"Gabriele Muccino",
+                        trailer:"DMOBlEcRuw8"})'></a>
+              <h6>The Pursuit of Happyness</h6>
+          </div>
+          <div class="landscape_poster">
+              <a href="review.html">
+                  <img src="/images/theboy.jpg" alt="" 
+                  onclick='handleSeries(
+                      {banner:"boy.jpg",
+                      title_img:"boy_title.png",
+                      title:"The Boy Who Harnessed the Wind",
+                      details:"2019 | 13+ | 1h 53m | Independent Movies",
+                      plot:"Inspired by a science book, 13-year-old William Kamkwamba builds a wind turbine to save his Malawian village from famine. Based on a true story.",
+                      starring:"Maxwell Simba,Chiwetel Ejiofor,Aïssa Maïga",
+                      creators:"Chiwetel Ejiofor",
+                      trailer:"nPkr9HmglG0"})'></a>
+              <h6>The Boy Who Harnessed the Wind</h6>
+          </div>
+          <div class="landscape_poster">
+              <a href="review.html">
+                  <img src="/images/goodfellas.jpg" alt="" 
+                  onclick='handleSeries(
+                      {banner:"goodfellas.jpg",
+                      title_img:"goodfellas_title.png",
+                      title:"GoodFellas",
+                      details:"1990 | 18+ | 2h 25m | Movies Based on Real Life",
+                      plot:"Former mobster Henry Hill recounts his colorful yet violent rise and fall in a New York crime family -- a high-rolling dream turned paranoid nightmare.",
+                      starring:"Robert De Niro,Ray Liotta,Joe Pesci",
+                      creators:"Martin Scorsese",
+                      trailer:"xWMxvFvhAB8"})'></a>
+              <h6>GoodFellas</h6>
+          </div>
+          <div class="landscape_poster">
+              <a href="review.html">
+                  <img src="/images/midnight.jpg" alt="" 
+                    onclick='handleSeries(
+                        {banner:"midnight.jpg",
+                        title_img:"midnight_title.png",
+                        title:"The Midnight Sky",
+                        details:"2020 | 13+ | 1h 58m | US Movies",
+                        plot:"In the aftermath of a global catastrophe, a lone scientist in the Arctic races to contact a crew of astronauts with a warning not to return to Earth.",
+                        starring:"George Clooney,Felicity Jones,David Oyelowo",
+                        creators:"George Clooney",
+                        trailer:"DXUUqr3AFKs"})'></a>
+              <h6>The Midnight Sky</h6>
+          </div>
+          <div class="landscape_poster">
+              <a href="review.html">
+                <img src="/images/mirage.jpg" alt=""
+                 onclick='handleSeries(
+                     {banner:"mirage.jpg",
+                     title_img:"mirage_title.png",
+                     title:"Mirage",
+                     details:"2018 | 18+ | 2h 9m | Sci-Fi Movies",
+                     plot:"A space-time continuum glitch allows Vera to save a boy`s life 25 years earlier, but results in the loss of her daughter, whom she fights to get back.",
+                     starring:"Adriana Ugarte,Chino Darín,Javier Gutiérrez",
+                     creators:"Oriol Paulo",
+                     trailer:"3NCOwTBWYdE"})'></a>
+              <h6>Mirage</h6>
+          </div>
+          <div class="landscape_poster">
+              <a href="review.html">
+                <img src="/images/Navarasa.jpg" alt="" 
+                onclick='handleSeries(
+                    {banner:"navarasa.jpg",
+                    title_img:"navarasa_title.png",
+                    title:"Navarasa",
+                    details:"2021 | 18+ | 1 Season | Social Issue Dramas",
+                    plot:"From amusement to awe, the nine human emotions of Indian aesthetic theory are explored in this anthology series.",
+                    starring:"Suriya,Vijay Sethupathi,Revathy,etc",
+                    creators:"Karthik Subbaraj,Karthik Naren,Goutham Vasudev Menon,etc",
+                    trailer:"Go6O1wX8H-c"})'></a>
+              <h6>Navarasa</h6>
+          </div>
+          <div class="landscape_poster">
+              <a href="review.html">
+                <img src="/images/junekopi.jpg" alt="" 
+                onclick='handleSeries(
+                    {banner:"june&kopi.jpg",
+                    title_img:"june&kopi_title.png",
+                    title:"June & Kopi",
+                    details:"2021 | 7+ | 1h 30m | Family Features",
+                    plot:"A street dog is taken in by a young couple, and the family pit becomes an instant accomplice as she adjusts to her new, loving home.",
+                    starring:"Acha Septriasa,Ryan Delon,Makayla Rose Hilli",
+                    creators:"Noviandra Santosa",
+                    trailer:"li8l80bY39w"})'></a>
+              <h6>June & Kopi</h6>
+          </div>
+      </div>
+  
+      <div class="scroll">
+          <div onclick="scrollMeLeft('two')" id="scrollArrow-left-2"><i class="fa fa-angle-left" style="color: red;font-size: 30px;"></i></div>
+          <div onclick="scrollMeRight('two')"  id="scrollArrow-right-2"><i class="fa fa-angle-right" style="color: red;font-size: 30px;"></i></div>
+      </div>
+      </div>
+
+
+    <!-- ACTION-->
+    <div id="b3">
+       <h5>Action & Adventure</h5>
+       <div class="landscape_posters" id="action_box">
+          <div class="landscape_poster">
+              <a href="review.html">
+                  <img src="/images/bb.png" alt="" 
+                  onclick='handleSeries(
+                      {banner: "brba.jpg",
+                        title_img:"brba_title.png",
+                        title:"Breaking Bad",
+                        details:"2008 | 18+ | 5 Seasons | TV Thrillers",
+                        plot:"A terminally ill chemistry teacher teams with a former student to manufacture crystal meth to secure his familys future.",
+                        starring:"Bryan Cranston,Aaron Paul,Anna Gunn",
+                        creators:"Vince Gilligan",
+                        trailer:"HhesaQXLuRY"})'></a>
+              <h6>Breaking Bad</h6>
+          </div>
+          <div class="landscape_poster">
+              <a href="review.html">
+                  <img src="/images/witcher.jpg" alt="" 
+                  onclick='handleSeries(
+                      {banner: "witcher.jpg",
+                      title_img:"witcher_title.png",
+                      title:"The Witcher",
+                      details:"2019 | 18+ | 1 Season | TV Dramas",
+                      plot:"Geralt of Rivia, a mutated monster-hunter for hire, journeys toward his destiny in a turbulent world where people often prove more wicked than beasts.",
+                      starring:"Henry Cavill,Anya Chalotra,Freya Allan",
+                      creators:"Lauren Schmidt Hissrich",
+                      trailer:"ndl1W4ltcmg"})'></a>
+              <h6>The Witcher</h6>
+          </div>
+          <div class="landscape_poster">     
+              <a href="review.html">
+                  <img src="/images/bodyguard.jpg" alt="" 
+                onclick='handleSeries(
+                    {banner:"bodyguard.jpg",
+                    title_img:"bodyguard_title.png",
+                    title:"Bodyguard",
+                    details:"2018 | 16+ | 1 Season | Crime TV Shows",
+                    plot:"After helping thwart a terrorist attack, a war veteran is assigned to protect a politician who was a main proponent of the very conflict he fought in.",
+                    starring:"Richard Madden,Keeley Hawes,Gina McKee",
+                    creators:"Jed Mercurio",
+                    trailer:"tLfLU6-9lxY"})'></a>
+              <h6>Bodyguard</h6>
+          </div>
+          <div class="landscape_poster">
+              <a href="review.html">
+                  <img src="/images/projectpower.jpg" alt="" 
+                  onclick='handleSeries(
+                {banner: "projectpower.jpg",
+                 title_img:"projectpower_title.png",
+                 title:"Project Power",
+                 details:"2020 | 16+ | 1h 53m | US Movies",
+                 plot:"An ex-soldier, a teen and a cop collide in New Orleans as they hunt for the source behind a dangerous new pill that grants users temporary superpowers.",
+                 starring:"Jamie Foxx,Joseph Gordon-Levitt,Dominique Fishback",
+                 creators:"Ariel Schulman,Henry Joost",
+                 trailer:"xw1vQgVaYNQ"})'></a>
+              <h6>Project Power</h6>
+          </div>
+          <div class="landscape_poster">
+              <a href="review.html">
+                  <img src="/images/rimofworld.jpg" alt="" 
+                  onclick='handleSeries(
+                      {banner:"rim.jpg",
+                      title_img:"rim_title.png",
+                      title:"Rim of the World",
+                      details:"2019 | 16+ | 1h 39m | US Movies",
+                      plot:"Stranded at a summer camp when aliens attack the planet, four teens with nothing in common embark on a perilous mission to save the world.",
+                      starring:"Jack Gore,Miya Cech,Benjamin Flores Jr.",
+                      creators:"McG",
+                      trailer:"xkvBpKHL99k"})'></a>
+              <h6>Rim of the World</h6>
+          </div>
+          <div class="landscape_poster">
+              <a href="review.html">
+                  <img src="/images/lostinspace.jpg" alt="" 
+                  onclick='handleSeries(
+                {banner:"lostinspace.jpg",
+                title_img:"lostinspace_title.png",
+                title:"Lost in Space",
+                details:"2018 | 7+ | 2 Seasons | US TV Shows",
+                plot:"After crash-landing on an alien planet, the Robinson family fights against all odds to survive and escape. But they`re surrounded by hidden dangers.",
+                starring:"Molly Parker,Toby Stephens,Maxwell Jenkins",
+                creators:"Stephen Hopkins",
+                trailer:"fzmM0AB60QQ"})'></a>
+              <h6>Lost in Space</h6>
+          </div>
+          <div class="landscape_poster">
+              <a href="review.html">
+                  <img src="/images/revenant.jpg" alt="" 
+                   onclick='handleSeries(
+                   {banner: "revenant.jpg",
+                   title_img:"revenant_title.png",
+                   title:"The Revenant",
+                   details:"2h 36m | Action & Adventure",
+                   plot:"In the 1820s, a fur trapper struggles for survival to exact retribution against a ruthless mercenary who left him to die along the Missouri River.",
+                   starring:"Leonardo DiCaprio,Tom Hardy,Domhnall Gleeson",
+                   creators:"Alejandro González Iñárritu",
+                   trailer:"LoebZZ8K5N0"})'></a>
+              <h6>The Revenant</h6>
+          </div>
+          <div class="landscape_poster">
+              <a href="review.html">
+                  <img src="/images/extraction.jpg" alt="" 
+                  onclick='handleSeries(
+                      {banner:"extraction.jpg",
+                      title_img:"extraction_title.png",
+                      title:"Extraction",
+                      details:"2020 | 18+ | 1h 57m | US Movies",
+                      plot:"A hardened mercenary`s mission becomes a soul-searching race to survive when he`s sent into Bangladesh to rescue a drug lord`s kidnapped son.",
+                      starring:"Chris Hemsworth,Rudhraksh Jaiswal,Randeep Hooda",
+                      creators:"Sam Hargrave",
+                      trailer:"L6P3nI6VnlY"})'></a>
+              <h6>Extraction</h6>
+          </div>
+          <div class="landscape_poster">
+              <a href="review.html">
+                  <img src="/images/jt.jpg" alt="" 
+                  onclick='handleSeries(
+                    {banner:"jt.jpg",
+                    title_img:"jt_title.png",
+                    title:"Jagame Thandhiram",
+                    details:"2021 | 18+ | 2h 38m | Tamil-Language Movies",
+                    plot:"When a clever, carefree gangster is recruited to help an overseas crime lord take down a rival, he is caught off guard by the moral dilemmas that follow.",
+                    starring:"Dhanush,Aishwarya Lekshmi,James Cosmo",
+                    creators:"Karthik Subbaraj",
+                    trailer:"2OtgYcd83Qg"})'></a>
+              <h6>Jagame Thandhiram</h6>
+          </div>
+      </div>
+  
+      <div class="scroll">
+          <div onclick="scrollMeLeft('three')" id="scrollArrow-left-3"><i class="fa fa-angle-left" style="color: red;font-size: 30px;"></i></div>
+          <div onclick="scrollMeRight('three')"  id="scrollArrow-right-3"><i class="fa fa-angle-right" style="color: red;font-size: 30px;"></i></div>
+      </div>
+      </div>
+    </div>
+
+
+
+      <!-- FOOTER -->
+      <hr class="mx-auto" style="width: 95%;margin-top: 100px;">
+      <div class="row footer mx-auto">
+          <div class="col-lg-5 col-md-4">
+              <h6>Company</h6>
+              <a href="https://about.netflix.com/en" target="_blank">About Netflix</a><br>
+              <a href="https://help.netflix.com/en/node/412" target="_blank">FAQ</a><br>
+              <a href="signup.html">Start Watching</a>
+          </div>
+          <div class="col-lg-4 col-md-4" id="contact_us">
+              <h6>Contact Us</h6>
+              <a href="https://twitter.com/netflix" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+              <a href="https://www.instagram.com/netflix/" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+              <a href="https://www.facebook.com/netflix" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+          </div>
+          <div class="col-lg-3 col-md-4">
+              <h6>Legal</h6>
+              <a href="https://help.netflix.com/en/legal/media-terms-and-conditions" target="_blank">Terms and Conditions</a><br>
+              <a href="https://help.netflix.com/en/legal/corporateprivacy" target="_blank">Privacy</a><br>
+              <a href="https://help.netflix.com/en/" target="_blank">Help Center</a><br>
+          </div>
+      </div>
+      </div>
+
+
+
+  <script src="home.js"></script>
+  <script src="review.js"></script>
+</body>
+</html>

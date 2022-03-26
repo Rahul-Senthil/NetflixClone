@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- Style.css -->
+    <link rel="stylesheet" href="other.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Netflix | Sign up</title>
+</head>
+<body onload="getDetails()">
+      <!-- NAVBAR -->
+      <nav class="navbar  navbar-expand-lg">
+        <div class="container-fluid" style="border-bottom: 1px solid grey;">
+          <a class="navbar-brand" href="#"><img src="images/netflixlogo.png" alt=""></a>
+            <div class="navs">
+                <a href="signin.html">Sign In</a>
+            </div>
+        </div>
+      </nav>
+
+      <div class="container payment">
+          <div class="row">
+              <div class="col-lg-4 col-md-8 mx-auto">
+                  <form action="model.html">
+                <h6>STEP 3 OF 3</h6>
+                <h4>Set up your credit or debit card</h4>
+                <div class="row">
+                    <div class="col">
+                        <img src="images/visa.jpg" alt="">
+                        <img src="images/mastercard.png" alt="">
+                    </div>
+                </div>
+                <input type="text" id="fname" placeholder="First name" autocomplete="off" pattern="^([a-zA-Z]{3,})$" required>
+                <input type="text" id="sname" placeholder="Second name" autocomplete="off" pattern="^([a-zA-Z]{0,})$">
+                <input type="text" id="cnum" placeholder="Card number" autocomplete="off" pattern="^([0-9]{16,16})$" required>
+                <input type="text" id="edate" placeholder="Expiration date(MM/YY)" autocomplete="off" pattern="^([0-9/]{5,5})$" required>
+                <input type="password" id="scode" placeholder="Security code(CVV)" autocomplete="off" pattern="^([0-9]{3,3})$" required>
+                <div class="row plan-box mx-auto">
+                    <div class="col plan-display">
+                        <h6 id="plan_amount">₹499/month</h6>
+                        <p id="plan_title">Basic Plan</p>
+                    </div>
+                    <div class="col change">
+                        <a href="plan.html" onclick="setUserInfo()">Change</a>
+                    </div>
+                </div>
+                <a href=""><button>Start Membership</button></a>
+            </form>
+              </div>
+          </div>
+      </div>
+
+      <hr class="mx-auto" style="width: 95%;">
+      <!-- FOOTER -->
+      <div class="row footer mx-auto">
+          <div class="col-lg-5 col-md-4">
+              <h6>Company</h6>
+              <a href="https://about.netflix.com/en" target="_blank">About Netflix</a><br>
+              <a href="https://help.netflix.com/en/node/412" target="_blank">FAQ</a><br>
+              <a href="signup.html">Start Watching</a>
+              
+          </div>
+          <div class="col-lg-4 col-md-4">
+              <h6>Contact Us</h6>
+              <a href="https://twitter.com/netflix" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+              <a href="https://www.instagram.com/netflix/" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+              <a href="https://www.facebook.com/netflix" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+          </div>
+          <div class="col-lg-3 col-md-4">
+              <h6>Legal</h6>
+              <a href="https://help.netflix.com/en/legal/media-terms-and-conditions" target="_blank">Terms and Conditions</a><br>
+              <a href="https://help.netflix.com/en/legal/corporateprivacy" target="_blank">Privacy</a><br>
+              <a href="https://help.netflix.com/en/" target="_blank">Help Center</a><br>
+          </div>
+          
+      </div>
+
+      <script src="app.js"></script>
+</body>
+</html>
